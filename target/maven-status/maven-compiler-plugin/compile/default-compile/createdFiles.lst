@@ -1,0 +1,15 @@
+pe\com\comedorUPeU\core\dao\CoreDAO.class
+pe\com\comedorUPeU\core\dao\BaseDAOHibernate.class
+pe\com\comedorUPeU\core\domain\Person.class
+pe\com\comedorUPeU\core\domain\StatusPerson.class
+pe\com\comedorUPeU\core\dao\CoreDAOImpl.class
+pe\com\comedorUPeU\core\domain\Comensal.class
+pe\com\comedorUPeU\core\dao\MaintainDAO.class
+pe\com\comedorUPeU\core\domain\StatusPerson$Status.class
+pe\com\comedorUPeU\core\domain\TypeDocument.class
+pe\com\comedorUPeU\core\domain\TypeComensal.class
+pe\com\comedorUPeU\core\domain\BaseEntity.class
+pe\com\comedorUPeU\core\domain\StatusComensal$Status.class
+pe\com\comedorUPeU\core\dao\MaintainDAOImpl.class
+pe\com\comedorUPeU\core\domain\BaseType.class
+pe\com\comedorUPeU\core\domain\StatusComensal.class

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/06/2012 10:38:16 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="pe.com.comedorUPeU.core.domain.Comensal" table="comensal">
+		<id name="id" type="java.lang.Long">
+			<column name="id" />
+			<generator class="identity" />
+		</id>
+<!-- 		<version name="version" type="java.lang.Integer"> -->
+<!-- 			<column name="version" /> -->
+<!-- 		</version> -->
+		<property name="codeStudent" type="string">
+			<column name="codeStudent" length="12" />
+		</property>
+
+		<property name="typeComensal" type="string">
+			<column name="typeComensal" length="20" />
+		</property>
+		<many-to-one name="person" class="pe.com.comedorUPeU.core.domain.Person" lazy="false" fetch="select" 
+        					cascade="all">
+            <column name="personId" />
+        </many-to-one>	
+        
+        <many-to-one name="statusComensal" class="pe.com.comedorUPeU.core.domain.Comensal" lazy="false" fetch="select">
+            <column name="status" />
+        </many-to-one>	
+        
+        
+
+<!-- status -->
+<!--         <many-to-one name="statusPerson" class="pe.com.peruInka.core.domain.StatusPerson" lazy="false" fetch="select"> -->
+<!--             <column name="status" /> -->
+<!--         </many-to-one>		 -->
+
+
+	</class>
+</hibernate-mapping>
